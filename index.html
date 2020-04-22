@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
+<!DOCTYPE html>
+
+<head>
+  <title>Lockdown Survey</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <form id="survey-form">
+
+      <h1 id="title">Lockdown Survey</h1>
+      <p id="description"><i>Thank you for taking the time to complete this survey!</i></p>
+
+      <label for="name" id="name-label">1. Name</label>
+      <input type="text" id="name" placeholder="Your Name" required><br>
+
+      <label for="email" id="email-label">2. Email</label>
+      <input type="email" id="email" placeholder="email@email.com" required><br>
+
+      <label for="location" id="location-label">3. Location (optional)</label>
+      <input type="text" id="age" placeholder="City, State">
+
+      <br>
+      <label for="number" id="number-label">4. How many days have you been on stay at home orders?</label>
+      <input type="number" id="day" placeholder="22" min="1" max="200">
+
+      <br>
+      <label for="rolls" id="rolls-label">5. How many rolls of toilet paper do you currently have?</label>
+      <input type="number" id="number" placeholder="6" min="0" max="500">
+
+      <br>
+      <label for="dressed" id="dressed-label">6. Do you get dressed everyday? </label>
+      <select id="dropdown">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <div class="situation">
+        <p>7. Which option best describes your current situation?</p>
+        <input type="radio" name="situation" value="essential worker" checked>
+        <label for="essential" id="essential-label">Essential worker</label><br>
+
+        <input type="radio" name="situation" value="work from home">
+        <label for="home" id="home-label">Work from home</label><br>
+
+        <input type="radio" name="situation" value="work+parenting">
+        <label for="parenting" id="parenting-label">Work from home and parenting</label><br>
+
+        <input type="radio" name="situation" value="furloughed">
+        <label for="furloughed" id="furloughed-label">Furloughed</label><br>
+
+        <input type="radio" name="situation" value="reduced hours">
+        <label for="reduced" id="reduced-label">Reduced hours</label><br>
+
+        <input type="radio" name="situation" value="unemployed">
+        <label for="unemployed" id="unemployed-label">Unemployed</label><br>
+
+        <input type="radio" name="situation" value="other">
+        <label for="other" id="other-situation-label">Other</label><br>
+      </div>
+      <br>
+
+      <div id="emotions">
+        <label for="emotions" id="emotion-label">8. How would you describe your current emotional state?</label>
+        <textarea name="myTextBox" id="text" cols="60" rows="5">Better than expected? Pretty tough? Tell us about it here!</textarea>
+      </div>
+
+      <div id="hobbies">
+        <p>9. What hobbies have you found helpful in this time? (Check all that apply)</p>
+        <input type="checkbox" name="hobbies" value="reading">
+        <label for="reading" id="reading-label">Reading</label><br>
+
+        <input type="checkbox" name="hobbies" value="netflix">
+        <label for="netflix" id="netflix-label">Netflix</label><br>
+
+        <input type="checkbox" name="hobbies" value="exercise">
+        <label for="exercise" id="exercise-label">Exercise</label><br>
+
+        <input type="checkbox" name="hobbies" value="knitting">
+        <label for="knitting" id="knitting-label">Knitting</label><br>
+
+        <input type="checkbox" name="hobbies" value="art">
+        <label for="art" id="art-label">Art Projects</label><br>
+
+        <input type="checkbox" name="hobbies" value="puzzles">
+        <label for="puzzles" id="puzzles-label">Jigsaw Puzzles</label><br>
+
+        <input type="checkbox" name="hobbies" value="cooking">
+        <label for="cooking" id="cooking-label">Cooking</label><br>
+
+        <input type="checkbox" name="hobbies" value="gardening">
+        <label for="gardening" id="gardening-label">Gardening</label><br>
+
+        <input type="checkbox" name="hobbies" value="other hobbies">
+        <label for="other" id="other-label">Other</label>
+      </div>
+
+      <input type="submit" id="submit">
+
+    </form>
+  </div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
